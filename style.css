@@ -53,3 +53,17 @@ main {
     background-color: var(--dark-bg);
     color: var(--font-color);
 }
+
+.introduction {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    margin-left: 3rem;
+    margin-right: 5rem;
+    margin-top: 5rem;
+}
+
+.introduction p:last-child {
+    margin-top: 0.5rem;
+    font-weight: bold;
+}
