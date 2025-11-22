@@ -14,10 +14,11 @@ body {
 header {
     background-image: url("./assets/banner.jpg");
     background-size: cover;
-    width: 30rem;
+    width: 25rem;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    flex-shrink: 0;
 }
 
 header img {
