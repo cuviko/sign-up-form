@@ -5,6 +5,12 @@
     font-family: inherit;
 }
 
+:root {
+    --dark-bg: #2d2c18;
+    --light-bg: #4d4c3b;
+    --font-color: rgb(230, 230, 230);
+}
+
 body {
     min-height: 100vh;
     display: flex;
@@ -41,4 +47,9 @@ header a,
 header a:link,
 header:visited {
     color: black;
+}
+
+main {
+    background-color: var(--dark-bg);
+    color: var(--font-color);
 }
