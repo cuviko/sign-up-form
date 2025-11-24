@@ -9,6 +9,9 @@
     --dark-bg: #2d2c18;
     --light-bg: #4d4c3b;
     --font-color: rgb(230, 230, 230);
+    --red: #951a1e;
+    --dark-red: #391109;
+    --orange: #ae4525;
 }
 
 body {
@@ -74,4 +77,51 @@ main {
 
 form {
     background-color: var(--light-bg);
+    padding: 2rem 5rem 2rem 3rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+form h2 {
+    margin-bottom: 1rem;
+}
+
+form .row {
+    display: flex;
+    gap: 5rem;
+    flex-wrap: wrap;
+}
+
+form .row p {
+    position: relative;
+    display: flex;
+}
+
+form .row p input {
+    width: 15rem;
+}
+
+form .row p label {
+    position: absolute;
+    top: -1.5rem;
+    font-size: 0.9rem;
+}
+
+button[type="submit"] {
+    margin-top: 2rem;
+    background-color: var(--red);
+    width: max-content;
+    margin-left: 3rem;
+    padding: 1rem 3rem;
+    color: var(--font-color);
+    border: 2px solid var(--light-bg);
+}
+
+button[type="submit"]:hover {
+    background-color: var(--orange);
+}
+
+button[type="submit"]:active {
+    background-color: var(--dark-red);
 }
