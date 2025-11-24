@@ -26,7 +26,42 @@
             <p>It is funnier that man exceeds the speed of light than fish start living in the land.</p>
             <p>It can be said that this is (a) final ultimatum from the god to the people who can fight.</p>
         </section>
+        <form action="" id="sign-up">
+            <h2>Become a lab member!</h2>
+            <div class="row">
+                <p>
+                    <label for="first-name">First name</label>
+                    <input type="text" name="first-name" id="first-name" required>
+                </p>
+                <p>
+                    <label for="last-name">Last name</label>
+                    <input type="text" name="last-name" id="last-name" required>
+                </p>
+            </div>
+            <div class="row">
+                <p>
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="email" required>
+                </p>
+                <p>
+                    <label for="phone">Phone number</label>
+                    <input type="tel" name="phone" id="phone" required>
+                </p>
+            </div>
+            <div class="row">
+                <p>
+                    <label for="password">Password</label>
+                    <input type="password" name="password" id="password" required minlength="6">
+                </p>
+                <p>
+                    <label for="confirm-password">Confirm password</label>
+                    <input type="password" name="confirm-password" id="confirm-password" required minlength="6">
+                </p>
+            </div>
+        </form>
+        <button type="submit" form="sign-up">Create Account</button>
     </main>
+
 
 </body>
 
