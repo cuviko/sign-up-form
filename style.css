@@ -50,7 +50,9 @@ header a,
 header a:link,
 header:visited {
     color: black;
+    font-weight: bold;
 }
+
 
 main {
     display: flex;
@@ -118,6 +120,7 @@ button[type="submit"] {
     color: var(--font-color);
     border: 2px solid var(--light-bg);
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    font-weight: bold;
 }
 
 button[type="submit"]:hover {
@@ -126,4 +129,21 @@ button[type="submit"]:hover {
 
 button[type="submit"]:active {
     background-color: var(--dark-red);
+}
+
+.login {
+    margin-top: 2rem;
+    margin-bottom: 5rem;
+    margin-left: 3rem;
+}
+
+.login a {
+    color: var(--red);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.login a:visited,
+.login a:link {
+    color: var(--red);
 }
