@@ -12,6 +12,7 @@
     --red: #951a1e;
     --dark-red: #391109;
     --orange: #ae4525;
+    --eye: #a594b8;
 }
 
 body {
@@ -82,7 +83,7 @@ form {
     padding: 2rem 5rem 2rem 3rem;
     display: flex;
     flex-direction: column;
-    gap: 2rem;
+    gap: 2.5rem;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 
@@ -103,12 +104,27 @@ form .row p {
 
 form .row p input {
     width: 15rem;
+    padding: 0.2rem;
+    background-color: var(--dark-bg);
+    color: var(--font-color);
+}
+
+
+form .row p input:invalid:not(:placeholder-shown) {
+    outline-color: var(--red);
+    border: 2px solid var(--red);
+}
+
+form .row p input:valid {
+    outline-color: var(--eye);
+    border: 2px solid var(--eye);
 }
 
 form .row p label {
     position: absolute;
     top: -1.5rem;
-    font-size: 0.9rem;
+    font-size: 0.8rem;
+    font-weight: bold;
 }
 
 button[type="submit"] {
